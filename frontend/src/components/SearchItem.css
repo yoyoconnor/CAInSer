@@ -1,0 +1,58 @@
+.search-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+  border: 2px solid #00b52a; /* Add green outline */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.search-item:hover {
+  background-color: #9bdca5;
+}
+
+.search-item-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.search-item-image img {
+  width: 100%;
+  height: auto;
+  opacity: 1; /* Make the image fully opaque */
+}
+
+.search-item-text {
+  flex-grow: 1;
+}
+
+.search-item h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  opacity: 1; /* Make the text fully opaque */
+}
+
+.search-item p {
+  margin: 0;
+  color: #777;
+  opacity: 1; /* Make the text fully opaque */
+}
+
+.search-item-link {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.search-item-link:hover {
+  text-decoration: underline;
+}

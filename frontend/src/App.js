@@ -1,10 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import HomePage from './components/HomePage'
+import HomePage from './components/HomePage';
+import SearchRes from './components/SearchRes';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <HomePage/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/searchres" element={<SearchRes />} />
+      </Routes>
+    </Router>
   );
 }
 

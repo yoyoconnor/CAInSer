@@ -1,20 +1,13 @@
 import React from 'react';
 import './HomePage.css';
 import SearchBar from './SearchBar';
+import Navbar from './Navbar';
 
 const HomePage = () => {
   return (
     <div className="homepage">
-      <header className="homepage-header">
-        <nav className="navbar">
-          <div className="logo">YourLogo</div>
-          <div className="navigation-links">
-            <a href="/">Home</a>
-            <a href="/profile">Profile</a>
-            <a href="/connections">Connections</a>
-            </div>
-        </nav>
-      </header>
+
+        <Navbar />
 
       <main className="homepage-main">
         <div className="hero-section">

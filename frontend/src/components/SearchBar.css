@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color:#00b52a;;
+    background-color: #0077b5;
     color: #fff;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -34,7 +34,7 @@
   
   .search-button:hover,
   .filter-button:hover {
-    background-color: #00b52a;;
+    background-color: #005f8a;
   }
   
   .search-icon {

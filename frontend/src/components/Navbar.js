@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 
+
 const Navbar = () => {
     return (
 <header className="homepage-header">

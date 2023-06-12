@@ -7,8 +7,6 @@ const HomePage = () => {
   return (
     <div className="homepage">
 
-        <Navbar />
-
       <main className="homepage-main">
         <div className="hero-section">
           <h1>Welcome to Internsearch</h1>

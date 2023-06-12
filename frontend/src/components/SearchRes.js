@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
-import Navbar from './Navbar';
 import SearchItem from './SearchItem';
+import SearchBar from './SearchBar';
 
 const ArrayofSearchItems = [
   {
@@ -62,8 +62,12 @@ const ArrayofSearchItems = [
 
 const SearchRes = (props) => {
   return (
+    <>
+    
     <div className="respage">
-      <Navbar />
+    <br/>
+    <SearchBar/>
+    <br/>
       {ArrayofSearchItems.map((item) => (
         <SearchItem
           key={item.id}
@@ -74,6 +78,8 @@ const SearchRes = (props) => {
         />
       ))}
     </div>
+    </>
+
   );
 };
 

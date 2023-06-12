@@ -10,13 +10,16 @@ const FilterFields = ({ filterData, handleFilterChange, toggleFilterPopup }) => 
         placeholder="Zip Code"
         value={filterData.zipcode}
         onChange={handleFilterChange}
+        className='zipcode-input FilterFields3'
+        size={10}
       />
       <select
         name="opportunityType"
         value={filterData.opportunityType}
         onChange={handleFilterChange}
+        className='FilterFields'
       >
-        <option value="">Opportunity Type</option>
+        <option value="">Type</option>
         <option value="volunteering">Volunteering</option>
         <option value="internship">Internship</option>
       </select>
@@ -24,13 +27,14 @@ const FilterFields = ({ filterData, handleFilterChange, toggleFilterPopup }) => 
         name="locationType"
         value={filterData.locationType}
         onChange={handleFilterChange}
+        className='FilterFields'
       >
         <option value="">Location Type</option>
         <option value="remote">Remote</option>
         <option value="in-person">In-person</option>
       </select>
-      <button className="apply-filter-button" onClick={toggleFilterPopup}>
-        Apply Filters
+      <button className="apply-filter-button" onClick={toggleFilterPopup} >
+        Apply
       </button>
     </div>
   );
@@ -41,10 +45,9 @@ const SearchBar = () => {
   const [showFilterPopup, setShowFilterPopup] = useState(false);
   const [filterData, setFilterData] = useState({
     zipcode: '',
-    opportunityType: '',
+    Type: '',
     locationType: '',
   });
-
   const handleSearch = () => {
     const searchObject = {
       query: searchQuery,
@@ -91,6 +94,7 @@ const SearchBar = () => {
   };
 
   return (
+    <>
     <div className="search-bar">
       <input
         type="text"
@@ -105,14 +109,17 @@ const SearchBar = () => {
       <button className="filter-button" onClick={toggleFilterPopup}>
         Filter
       </button>
-      {showFilterPopup && (
-        <FilterFields
-          filterData={filterData}
-          handleFilterChange={handleFilterChange}
-          toggleFilterPopup={toggleFilterPopup}
-        />
-      )}
     </div>
+    <div className="filter-bar">
+    {showFilterPopup && (
+      <FilterFields
+        filterData={filterData}
+        handleFilterChange={handleFilterChange}
+        toggleFilterPopup={toggleFilterPopup}
+      />
+    )}
+    </div>
+    </>
   );
 };
 

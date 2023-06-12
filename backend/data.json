@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Software Development Internship",
+      "company": "XYZ Tech",
+      "location": "r",
+      "type": "i",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "title": "Web Development Internship",
+      "company": "ABC Inc.",
+      "location": "i",
+      "type": "i",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+    },
+    {
+      "id": 3,
+      "title": "Marketing Internship",
+      "company": "Marketing Solutions",
+      "location": "r",
+      "type": "i",
+      "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam."
+    },
+    {
+      "id": 4,
+      "title": "Data Analysis Internship",
+      "company": "Data Insights",
+      "location": "i",
+      "type": "i",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 5,
+      "title": "Graphic Design Internship",
+      "company": "Design Studio",
+      "location": "i",
+      "type": "i",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "id": 6,
+      "title": "Business Development Internship",
+      "company": "Global Ventures",
+      "location": "r",
+      "type": "i",
+      "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+    },
+    {
+      "id": 7,
+      "title": "Finance Internship",
+      "company": "Financial Solutions",
+      "location": "i",
+      "type": "i",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+    },
+    {
+      "id": 8,
+      "title": "Human Resources Internship",
+      "company": "People Management",
+      "location": "r",
+      "type": "i",
+      "description": "Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+    },
+    {
+      "id": 9,
+      "title": "Public Relations Internship",
+      "company": "PR Agency",
+      "location": "i",
+      "type": "i",
+      "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+    },
+    {
+      "id": 10,
+      "title": "Social Media Internship",
+      "company": "Social Media Solutions",
+      "location": "r",
+      "type": "i",
+      "description": "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    }
+  ]
+  

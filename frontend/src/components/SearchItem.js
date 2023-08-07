@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SearchItem = (props) => {
     return (
-        <Link to={`/profile/${props.id}`} className="search-item">
+        <Link to={`/applicationform/${props.id}`} className="search-item">
             <div className="search-item-image">
                 <img src={props.image} alt={props.name} />
             </div>

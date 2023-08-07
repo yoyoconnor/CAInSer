@@ -1,8 +1,9 @@
 const express = require('express');
 const internships = require('./data.json');
+const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3001;
 
 app.get('/internships', (req, res) => {
   const { query, type, location } = req.query;

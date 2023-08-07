@@ -20,8 +20,8 @@ const FilterFields = ({ filterData, handleFilterChange, toggleFilterPopup }) => 
         className='FilterFields'
       >
         <option value="">Type</option>
-        <option value="volunteering">Volunteering</option>
-        <option value="internship">Internship</option>
+        <option value="v">Volunteering</option>
+        <option value="i">Internship</option>
       </select>
       <select
         name="locationType"
@@ -30,8 +30,8 @@ const FilterFields = ({ filterData, handleFilterChange, toggleFilterPopup }) => 
         className='FilterFields'
       >
         <option value="">Location Type</option>
-        <option value="remote">Remote</option>
-        <option value="in-person">In-person</option>
+        <option value="r">Remote</option>
+        <option value="i">In-person</option>
       </select>
       <button className="apply-filter-button" onClick={toggleFilterPopup} >
         Apply
@@ -51,34 +51,30 @@ const SearchBar = () => {
   const handleSearch = () => {
     const searchObject = {
       query: searchQuery,
-      filters: { ...filterData },
+      location: filterData.locationType,
+      type: filterData.opportunityType,
     };
 
     // Convert search object to JSON string
-    const searchJsonString = JSON.stringify(searchObject);
-
-    // Define the backend API endpoint URL
-    const apiUrl = 'https://your-backend-api.com/search';
-
+    console.log(searchObject);
+    fetchData(searchObject);
     // Make the API call to the backend
-    fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: searchJsonString,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Process the response data from the backend
-        console.log(data);
-        // Perform further actions with the data returned from the backend
-      })
-      .catch((error) => {
-        // Handle any errors that occur during the API call
-        console.error('Error:', error);
-      });
+    
   };
+  const fetchData = async (searchObject) => {
+    try {
+      console.log(`localhost:8080/internship/?query=${searchObject.query}&location=${searchObject.location}&type=${searchObject.type}`);
+      const response = await fetch(`localhost:8080/internship/query=${searchObject.query}&location=${searchObject.location}&type=${searchObject.type}`);
+      const data = await response.json();
+      // Process the received data
+      console.log(data);
+      // Update the state or UI with the search results
+    } catch (error) {
+      // Handle any errors
+      console.error('Error:', error);
+    }
+  };
+
 
   const handleChange = (event) => {
     setSearchQuery(event.target.value);
